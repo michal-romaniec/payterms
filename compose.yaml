@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:17'
+    environment:
+      - 'POSTGRES_DB=payterms'
+      - 'POSTGRES_PASSWORD=payterms'
+      - 'POSTGRES_USER=payterms'
+    ports:
+      - '5432:5432'
