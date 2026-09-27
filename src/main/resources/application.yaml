@@ -1,6 +1,13 @@
 spring:
   application:
     name: payterms
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  devtools:
+    restart:
+      additional-exclude: db/migration/**
+
 management:
   endpoints:
     web:
