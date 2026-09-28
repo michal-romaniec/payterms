@@ -28,7 +28,10 @@ jobs:
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
 
-      - name: Build, test and analyze
+      - name: Build and test
+        run: ./mvnw -B verify
+
+      - name: SonarQube analysis
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: ./mvnw -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+        run: ./mvnw -B org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
