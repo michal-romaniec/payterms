@@ -28,7 +28,7 @@
     </scm>
     <properties>
         <java.version>25</java.version>
-        <spring-modulith.version>2.1.1</spring-modulith.version>
+        <spring-modulith.version>2.1.2</spring-modulith.version>
         <sonar.organization>michal-romaniec</sonar.organization>
         <sonar.projectKey>michal-romaniec_payterms</sonar.projectKey>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
